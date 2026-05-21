@@ -97,7 +97,7 @@ Recommended execution phases for the skill:
 Output design best practices:
 
 - Keep raw capture artifacts and derived artifacts separate.
-- Use deterministic file naming (`videoId` + timestamp).
+- Use a deterministic per-video output directory (`outputs/<videoId>`) with stable file names.
 - Include a run summary file with status and errors.
 
 ## 8) Anti-patterns to avoid

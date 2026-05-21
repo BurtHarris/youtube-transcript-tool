@@ -595,7 +595,7 @@ async function main(): Promise<void> {
   const videoUrl = process.argv[2] ?? DEFAULT_SAMPLE_URL;
   const videoId = parseVideoId(videoUrl);
   const runId = new Date().toISOString().replace(/[:.]/g, "-");
-  const runDir = path.join(process.cwd(), "outputs", videoId, runId);
+  const runDir = path.join(process.cwd(), "outputs", videoId);
 
   await mkdir(runDir, { recursive: true });
 
